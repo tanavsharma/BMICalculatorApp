@@ -246,6 +246,20 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pa5-BJ-foD">
                                                 <rect key="frame" x="0.0" y="85.5" width="374" height="80"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You BMI Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6f-7G-ZLz">
+                                                        <rect key="frame" x="8" y="8" width="358" height="64"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="S6f-7G-ZLz" firstAttribute="leading" secondItem="Pa5-BJ-foD" secondAttribute="leading" constant="8" id="P80-pQ-rrv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="S6f-7G-ZLz" secondAttribute="trailing" constant="8" id="Tky-wQ-3SO"/>
+                                                    <constraint firstItem="S6f-7G-ZLz" firstAttribute="top" secondItem="Pa5-BJ-foD" secondAttribute="top" constant="8" id="b08-k6-YgP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="S6f-7G-ZLz" secondAttribute="bottom" constant="8" id="nB8-be-FgA"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5N8-Vz-Z5G">
                                                 <rect key="frame" x="0.0" y="171.5" width="374" height="80"/>
@@ -289,6 +303,8 @@
                         <outlet property="Label" destination="NnE-UY-sG5" id="m33-FB-MAw"/>
                         <outlet property="age" destination="YdF-q3-Jxq" id="LYQ-QH-Xte"/>
                         <outlet property="ageEt" destination="2zO-hs-Jji" id="Kal-ky-Dwz"/>
+                        <outlet property="bmiResultLabel" destination="S6f-7G-ZLz" id="Fd4-lV-3SA"/>
+                        <outlet property="bmiResultView" destination="Pa5-BJ-foD" id="ldC-GO-vpj"/>
                         <outlet property="calcuView" destination="83M-i7-nfT" id="dhl-Nn-Fee"/>
                         <outlet property="fnEt" destination="r0L-cJ-eb1" id="VSf-hf-J44"/>
                         <outlet property="fullName" destination="9xS-42-wM9" id="rID-De-B87"/>
@@ -312,7 +328,6 @@
         <!--History-->
         <scene sceneID="Kg7-kp-BKd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L0G-ha-uRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="3IA-yF-Ti2" customClass="HistoryScreen" customModule="BMICalculatorApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RYh-au-wo7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -328,6 +343,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="History" selectedImage="archivebox" catalog="system" id="izS-zy-B9X"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L0G-ha-uRu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="756.52173913043487" y="420.53571428571428"/>
         </scene>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		034C051E276BB0530055A48F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034C051D276BB0530055A48F /* Assets.xcassets */; };
 		034C0521276BB0530055A48F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034C051F276BB0530055A48F /* LaunchScreen.storyboard */; };
 		034C0529276BB6360055A48F /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034C0528276BB6360055A48F /* HistoryScreen.swift */; };
+		03DEBA2A276C008800A6E946 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03DEBA29276C008800A6E946 /* GoogleService-Info.plist */; };
+		989674E9D7EE88DD638B0DE3 /* Pods_BMICalculatorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7573200BD07E8292086A0D7C /* Pods_BMICalculatorApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		034C0520276BB0530055A48F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		034C0522276BB0530055A48F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		034C0528276BB6360055A48F /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
+		03DEBA29276C008800A6E946 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3170490CB4CDDB15DD6A320D /* Pods-BMICalculatorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMICalculatorApp.release.xcconfig"; path = "Target Support Files/Pods-BMICalculatorApp/Pods-BMICalculatorApp.release.xcconfig"; sourceTree = "<group>"; };
+		7573200BD07E8292086A0D7C /* Pods_BMICalculatorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMICalculatorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A821A9E83A269974E21CA3 /* Pods-BMICalculatorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMICalculatorApp.debug.xcconfig"; path = "Target Support Files/Pods-BMICalculatorApp/Pods-BMICalculatorApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				989674E9D7EE88DD638B0DE3 /* Pods_BMICalculatorApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				034C0513276BB04F0055A48F /* BMICalculatorApp */,
 				034C0512276BB04F0055A48F /* Products */,
+				54E0A05C364AA4CA760D8294 /* Pods */,
+				3EE4320DDEBEF3A4A249FA14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +75,26 @@
 				034C051F276BB0530055A48F /* LaunchScreen.storyboard */,
 				034C0522276BB0530055A48F /* Info.plist */,
 				034C0528276BB6360055A48F /* HistoryScreen.swift */,
+				03DEBA29276C008800A6E946 /* GoogleService-Info.plist */,
 			);
 			path = BMICalculatorApp;
+			sourceTree = "<group>";
+		};
+		3EE4320DDEBEF3A4A249FA14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7573200BD07E8292086A0D7C /* Pods_BMICalculatorApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54E0A05C364AA4CA760D8294 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9A821A9E83A269974E21CA3 /* Pods-BMICalculatorApp.debug.xcconfig */,
+				3170490CB4CDDB15DD6A320D /* Pods-BMICalculatorApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 034C0525276BB0530055A48F /* Build configuration list for PBXNativeTarget "BMICalculatorApp" */;
 			buildPhases = (
+				FA2BD5726394EF7B37FD7536 /* [CP] Check Pods Manifest.lock */,
 				034C050D276BB04F0055A48F /* Sources */,
 				034C050E276BB04F0055A48F /* Frameworks */,
 				034C050F276BB04F0055A48F /* Resources */,
+				588F137199DB7C4923135867 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,12 +157,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				034C0521276BB0530055A48F /* LaunchScreen.storyboard in Resources */,
+				03DEBA2A276C008800A6E946 /* GoogleService-Info.plist in Resources */,
 				034C051E276BB0530055A48F /* Assets.xcassets in Resources */,
 				034C051C276BB04F0055A48F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		588F137199DB7C4923135867 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMICalculatorApp/Pods-BMICalculatorApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BMICalculatorApp/Pods-BMICalculatorApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BMICalculatorApp/Pods-BMICalculatorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA2BD5726394EF7B37FD7536 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BMICalculatorApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		034C050D276BB04F0055A48F /* Sources */ = {
@@ -287,6 +359,7 @@
 		};
 		034C0526276BB0530055A48F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A821A9E83A269974E21CA3 /* Pods-BMICalculatorApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +379,7 @@
 		};
 		034C0527276BB0530055A48F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3170490CB4CDDB15DD6A320D /* Pods-BMICalculatorApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
